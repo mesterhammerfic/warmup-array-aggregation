@@ -1,9 +1,12 @@
-# Sum Arrays
+# Multiply and Sum Arrays
 
 Please clone this repo, and complete the following warmup:
 
-Write a function called ```array_plus_array``` that sums two arrays containing 3 numeric values.
+In this warmup, students build two functions
+1. A function that multiplies two numerical values together
+2. A function that aggregates the values of two arrays by summing them.
+> A level up option is provided for students to write functions that broadcast arrays
 
-Once you have written your function, run the the imported tests.
+Tests have been provided to stress test each function's speed and durability.
 
 Good luck!
