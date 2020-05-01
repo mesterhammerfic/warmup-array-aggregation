@@ -1,9 +1,4 @@
 
-
-```python
-from tests import MultiplyTest, ArrayTest
-```
-
 # For today's warmup, please solve the following code problems:
 
 ## Exercise #1
@@ -12,24 +7,14 @@ The function below doesn't work. Figure out why and fix the code.
 
 
 ```python
-def multiply(a, b):
-    a * b
+
+def multiply(a,b):
+    return a * b
 ```
 
 *Run the cell below to see if your code is successful!*
 
-
-```python
-evaluate = MultiplyTest()
-evaluate.run(multiply)
-```
-
 Once you have passed the above tests, run the cell below to test your code on 100 randomly generated tests
-
-
-```python
-evaluate.run(multiply, random=True)
-```
 
 **Extra Credit:** Instead of summing individual numbers, see if you can edit your ```multiply``` function so that it is [broadcasting](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html) two arrays.
 
@@ -44,13 +29,14 @@ The output of the array should contain three numbers
 
 
 ```python
+
+import numpy as np
+
 def multiply(arr1, arr2):
-    pass
-```
-
-
-```python
-evaluate.run(multiply, random=True, broadcast=True)
+    arr1 = np.asarray(arr1)
+    arr2 = np.asarray(arr2)
+    
+    return arr1 * arr2
 ```
 
 # Exercise #2
@@ -65,24 +51,16 @@ The function should return a single digit that sums all digits within both array
 
 
 ```python
+
 def array_plus_array(arr1, arr2):
-    pass
+    
+    
+    return sum(arr1) + sum(arr2)
 ```
 
 *Run the following cell to test your function!*
 
-
-```python
-evaluate = ArrayTest()
-evaluate.run(array_plus_array)
-```
-
 Once you have managed to pass all of the tests, run the cell above to see if you function can pass 100 randomly generated tests!
-
-
-```python
-evaluate.run(array_plus_array, random=True)
-```
 
 **Extra Credit:** Instead of summing all numbers in your array, see if you can edit the ```array_plus_array``` function so that it is broadcasting two arrays.
 
@@ -91,19 +69,14 @@ evaluate.run(array_plus_array, random=True)
 
 
 ```python
+
+import numpy as np
+
 def array_plus_array(arr1, arr2):
-    pass
+    arr1 = np.asarray(arr1)
+    arr2 = np.asarray(arr2)
+    
+    return arr1 + arr2
 ```
 
 Test your code by running the cell below
-
-
-```python
-evaluate = ArrayTest()
-evaluate.run(array_plus_array, random=True, broadcast=True)
-```
-
-
-```python
-
-```
